@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>obonyom.com</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Michael Obonyo" />
+
+    <!--Favicon-->
+    <link rel="icon" href="#" type="image/x-icon" />
+
+    <!--Main CSS-->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!--Bootstrap 4-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--anime.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  </head>
+  <body>
+    <!--Collapsible Navbar-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+      <a id="head" class="nav-link" href="index.html">
+        ObonyoM
+      </a>
+
+      <button
+        type="button"
+        id="toggler"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">
+              Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Background Image-->
+    <div id="bgImg">
+      <!--HomePage Carousel-->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-slide-to="0"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="css-images/color-wheel.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="css-images/curves.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="css-images/monogram1.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="css-images/color-waves.jpg" alt="" />
+          </div>
+        </div>
+
+        <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#carousel" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <div id="about" class="about">
+      <h1>About Me</h1>
+      <p>
+        I am an architecture student with a passsion for digital design and
+        modelling, my tools of choice being Photoshop and Illustrator for image
+        handling and Revit for drafting and 3D modelling.
+      </p>
+      <div class="skillset">
+        <img src="css-images/logos/revit.png" alt="Revit" width="50px" />
+
+        <img
+          src="css-images/logos/illustrator.jpg"
+          alt="Illustrator"
+          width="50px"
+        />
+
+        <img
+          src="css-images/logos/photoshop.jpg"
+          alt="Photoshop"
+          width="50px"
+        />
+      </div>
+
+      <p>
+        I am also a freelance web developer, competent in HTML5, CSS3 and ES6
+        together with Bootstrap 4 and React JS.
+      </p>
+      <div class="skillset">
+        <img src="css-images/logos/html5.svg.jpg" alt="HTML5" width="50px" />
+
+        <img src="css-images/logos/css3.jpg" alt="CSS3" width="50px" />
+
+        <img src="css-images/logos/js.jpg" alt="Javascript" width="50px" />
+
+        <img
+          src="css-images/logos/bootstrap.jpg"
+          alt="Bootstrap"
+          width="50px"
+        />
+        <img src="css-images/logos/react.png" alt="React" width="60px" />
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+      <h1 style="font-family: 'Long Cang', cursive; font-size: 50px; text-align:center">Contact</h1>
+      <div class="conts" style="vertical-align: top">
+        <div id="email">
+          obonyo635@gmail.com
+        </div>
+        <br />
+        <div class="links">
+          <a
+            href="https://ke.linkedin.com/in/michael-obonyo-a902a6146"
+            target="blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!--FormSpree Form-->
+      <div id="form" style="padding: 20px" class="conts">
+        <p
+          style="color: rgb(116, 35, 35); font-size: xx-large; font-family: 'Long Cang', cursive;"
+        >
+          Feel free to leave a message
+        </p>
+        <form action="https://formspree.io/obonyo635@gmail.com" method="POST">
+          <input type="text" placeholder="YourName" /><br />
+          <br>
+          <input
+            type="email"
+            placeholder="youraddress@somemail.com"
+            required
+          /><br />
+          <br>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea
+          ><br />
+          <button type="submit" style="">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!--anime.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+
+    <!--Main JS file-->
+    <script src="index.js"></script>
+  </body>
+</html>

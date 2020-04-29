@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+#bgImg {
+  background-image: url("css-images/bgimg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(253, 5, 5, 0.5);
+  background-repeat: no-repeat;
+  min-height: 620px;
+}
+/*Navbar*/
+#head {
+  font-family: "Long Cang", cursive;
+  font-size: 56px !important;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0px !important;
+  color: black;
+  z-index: 1 !important;
+}
+.nav-link,
+.collapse {
+  padding: 0px !important;
+  margin: 0px 20px !important;
+}
+.nav-link,
+.navbar-dark {
+  color: black !important;
+  transition: 0.5s ease-in-out;
+  font-size: large;
+}
+.nav-link:hover {
+  color: brown !important;
+}
+.navbar-nav li {
+  text-align: center;
+  margin: 5px 0px;
+}
+.navbar-toggler-icon {
+  color: black !important;
+}
+
+/*Contact*/
+#contact {
+  background-color: rgba(255, 0, 0, 0.1);
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0.3)
+  );
+}
+#email {
+  font-family: "Long Cang", cursive;
+  font-size: 32px;
+  color: brown;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.links i {
+  font-size: 40px;
+  color: brown;
+  margin-left: 40px;
+  margin-top: 30px;
+  transition: 0.5s ease;
+}
+.links i:hover {
+  font-size: 43px;
+}
+/*About Me*/
+#about h1 {
+  font-family: "Long Cang", cursive;
+  font-size: 48px;
+}
+#about {
+  padding: 10px;
+  padding-top: 0px;
+  text-align: center;
+}
+/*Carousel*/
+.carousel,
+.carousel-inner img {
+  max-width: 700px;
+  height: auto;
+}
+#carousel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+}
+@media only screen and (max-width: 700px) {
+  .carousel,
+  .carousel-inner img {
+    max-width: 100%;
+  }
+}
+/*Form*/
+input, textarea{
+  width: 100%;
+  margin: 10px 0px;
+  display: inline-block;
+  border: 1px solid brown;
+  padding: 4px;
+}
+textarea{
+  height: 200px;
+}
+[type="submit"] {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  background-color: brown;
+  font-size: large;
+  padding: 5px 10px;
+}
+.conts {
+  display: inline-block;
+  width: 45%;
+}
+@media only screen and (max-width: 600px) {
+  #about {
+    text-align: center;
+  }
+  .skillset img {
+    display: inline-block !important;
+    margin: 5px;
+  }
+  .scrollImage {
+    width: 400px;
+  }
+  #bgImg {
+    min-height: 500px;
+  }
+  .conts {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*Portfolio page*/
+#images img {
+  max-height: 250px;
+  width: auto;
+  margin: 8px;
+  opacity: 1;
+  filter: opacity(1);
+  transition: 0.6s ease;
+}
+#images img:hover {
+  opacity: 0.8;
+  filter: opacity(0.8);
+}
+#images {
+  text-align: center;
+  position: absolute;
+  top: 100px;
+}
+#modal {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 2;
+}
+#modalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  min-width: 500px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 2px 4px 8px gray;
+  z-index: 3 !important;
+}
+#modalContent {
+}
+#modalHeader {
+  font-size: 32px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+#modalFooter {
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #images {
+    max-width: 100%;
+    height: auto;
+  }
+}
